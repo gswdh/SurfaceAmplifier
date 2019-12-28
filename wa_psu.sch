@@ -692,6 +692,19 @@
 <wire x1="-3.75" y1="2.5" x2="-3.75" y2="-2.5" width="0.15" layer="21"/>
 <circle x="-1.125" y="1.5" radius="0.25" width="0.15" layer="21"/>
 </package>
+<package name="PDQE10">
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.1524" layer="21"/>
+<pad name="1" x="2.54" y="10.16" drill="1.5" diameter="3"/>
+<pad name="2" x="-2.54" y="10.16" drill="1.5" diameter="3"/>
+<pad name="3" x="-10.16" y="-10.16" drill="1.5" diameter="3"/>
+<pad name="4" x="0" y="-10.16" drill="1.5" diameter="3"/>
+<pad name="5" x="10.16" y="-10.16" drill="1.5" diameter="3"/>
+<pad name="6" x="10.16" y="10.16" drill="1.5" diameter="3"/>
+<text x="-12.625" y="12.875" size="1" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="COMPARATOR">
@@ -721,6 +734,31 @@
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ISOLATED_BIPOLAR_PSU">
+<pin name="VIN+" x="-12.7" y="15.24" length="middle"/>
+<pin name="VIN-" x="-12.7" y="-15.24" length="middle"/>
+<pin name="VO+" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="VO-" x="12.7" y="-15.24" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
+<text x="-7.62" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="20.32" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="COM" x="12.7" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="ISOLATED_UNIPOLAR_PSU">
+<pin name="VIN+" x="-12.7" y="15.24" length="middle"/>
+<pin name="VIN-" x="-12.7" y="-15.24" length="middle"/>
+<pin name="VO+" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="COM" x="12.7" y="0" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
+<text x="-7.62" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="20.32" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -767,6 +805,55 @@
 <attribute name="HEIGHT" value="1.5" constant="no"/>
 <attribute name="PRICE_PER" value="1.56" constant="no"/>
 <attribute name="VALUE" value="LM2936" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PDQE10-Q48-D15-D">
+<description>Isolated Module DC DC Converter 2 Output 15V -15V 333mA, 333mA 18V - 75V Input</description>
+<gates>
+<gate name="G$1" symbol="ISOLATED_BIPOLAR_PSU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PDQE10">
+<connects>
+<connect gate="G$1" pin="COM" pad="4"/>
+<connect gate="G$1" pin="VIN+" pad="2"/>
+<connect gate="G$1" pin="VIN-" pad="1"/>
+<connect gate="G$1" pin="VO+" pad="3"/>
+<connect gate="G$1" pin="VO-" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="102-4868-ND" constant="no"/>
+<attribute name="HEIGHT" value="12" constant="no"/>
+<attribute name="PRICE_PER" value="13.64" constant="no"/>
+<attribute name="VALUE" value="DCDC +/-15V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PDQE10-Q48-S15">
+<description>Isolated Module DC DC Converter 1 Output 15V 667mA 18V - 75V Input</description>
+<gates>
+<gate name="G$1" symbol="ISOLATED_UNIPOLAR_PSU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PDQE10">
+<connects>
+<connect gate="G$1" pin="COM" pad="5"/>
+<connect gate="G$1" pin="VIN+" pad="2"/>
+<connect gate="G$1" pin="VIN-" pad="1"/>
+<connect gate="G$1" pin="VO+" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="PDQE10-Q48-S15-D" constant="no"/>
+<attribute name="HEIGHT" value="12" constant="no"/>
+<attribute name="PRICE_PER" value="12.18" constant="no"/>
+<attribute name="VALUE" value="DCDC 15V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1328,6 +1415,9 @@
 <part name="C10" library="PASSIVES" deviceset="C_ELEC" device="35MM" value="15mF 63V"/>
 <part name="GND18" library="NETS" deviceset="GND" device=""/>
 <part name="U$7" library="NETS" deviceset="VOUT" device=""/>
+<part name="U$8" library="ICs" deviceset="PDQE10-Q48-D15-D" device="" value="DCDC +/-15V"/>
+<part name="U$9" library="ICs" deviceset="PDQE10-Q48-S15" device="" value="DCDC 15V"/>
+<part name="U$10" library="ICs" deviceset="PDQE10-Q48-S15" device="" value="DCDC 15V"/>
 </parts>
 <sheets>
 <sheet>
@@ -1560,6 +1650,18 @@
 </instance>
 <instance part="U$7" gate="G$1" x="406.4" y="114.3" smashed="yes">
 <attribute name="VALUE" x="406.4" y="116.84" size="1.778" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="U$8" gate="G$1" x="375.92" y="17.78" smashed="yes">
+<attribute name="NAME" x="368.3" y="40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="368.3" y="38.1" size="1.778" layer="95"/>
+</instance>
+<instance part="U$9" gate="G$1" x="378.46" y="-63.5" smashed="yes">
+<attribute name="NAME" x="370.84" y="-40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="370.84" y="-43.18" size="1.778" layer="95"/>
+</instance>
+<instance part="U$10" gate="G$1" x="373.38" y="-149.86" smashed="yes">
+<attribute name="NAME" x="365.76" y="-127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="365.76" y="-129.54" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>

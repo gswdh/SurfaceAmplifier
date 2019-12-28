@@ -295,6 +295,19 @@
 <wire x1="-3.75" y1="2.5" x2="-3.75" y2="-2.5" width="0.15" layer="21"/>
 <circle x="-1.125" y="1.5" radius="0.25" width="0.15" layer="21"/>
 </package>
+<package name="PDQE10">
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.1524" layer="21"/>
+<pad name="1" x="2.54" y="10.16" drill="1.5" diameter="3"/>
+<pad name="2" x="-2.54" y="10.16" drill="1.5" diameter="3"/>
+<pad name="3" x="-10.16" y="-10.16" drill="1.5" diameter="3"/>
+<pad name="4" x="0" y="-10.16" drill="1.5" diameter="3"/>
+<pad name="5" x="10.16" y="-10.16" drill="1.5" diameter="3"/>
+<pad name="6" x="10.16" y="10.16" drill="1.5" diameter="3"/>
+<text x="-12.625" y="12.875" size="1" layer="21">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="CAPACITORS">
@@ -767,6 +780,24 @@ einem neuen Namen ab.</description>
 </element>
 <element name="C10" library="PASSIVES" package="35MM/10MMCAP" value="15mF 63V" x="-16.5" y="-398.25" smashed="yes">
 <attribute name="NAME" x="-1.175" y="-387.44" size="2" layer="25"/>
+</element>
+<element name="U$8" library="ICs" package="PDQE10" value="DCDC +/-15V" x="-150" y="-300" smashed="yes">
+<attribute name="DIGIKEY" value="102-4868-ND" x="-150" y="-300" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="12" x="-150" y="-300" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-162.625" y="-287.125" size="1" layer="21"/>
+<attribute name="PRICE_PER" value="13.64" x="-150" y="-300" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$9" library="ICs" package="PDQE10" value="DCDC 15V" x="-300" y="-300" smashed="yes">
+<attribute name="DIGIKEY" value="PDQE10-Q48-S15-D" x="-300" y="-300" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="12" x="-300" y="-300" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-312.625" y="-287.125" size="1" layer="21"/>
+<attribute name="PRICE_PER" value="12.18" x="-300" y="-300" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$10" library="ICs" package="PDQE10" value="DCDC 15V" x="-450" y="-300" smashed="yes">
+<attribute name="DIGIKEY" value="PDQE10-Q48-S15-D" x="-450" y="-300" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="12" x="-450" y="-300" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-462.625" y="-287.125" size="1" layer="21"/>
+<attribute name="PRICE_PER" value="12.18" x="-450" y="-300" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
