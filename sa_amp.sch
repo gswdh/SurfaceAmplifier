@@ -305,6 +305,16 @@
 </library>
 <library name="CAPACITORS">
 <packages>
+<package name="1206">
+<description>Standard imperial 1206.</description>
+<smd name="1" x="1.5" y="0" dx="1.5" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="-1.5" y="0" dx="1.5" dy="1" layer="1" rot="R90"/>
+<text x="-2" y="1.25" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="-2.25" y1="1" x2="2.25" y2="1" width="0.125" layer="21"/>
+<wire x1="2.25" y1="1" x2="2.25" y2="-1" width="0.125" layer="21"/>
+<wire x1="2.25" y1="-1" x2="-2.25" y2="-1" width="0.125" layer="21"/>
+<wire x1="-2.25" y1="-1" x2="-2.25" y2="1" width="0.125" layer="21"/>
+</package>
 <package name="0603">
 <description>Standard imperial 0603.</description>
 <smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
@@ -323,22 +333,22 @@
 <text x="15" y="10" size="1" layer="21">&gt;NAME</text>
 </package>
 <package name="7X17.5BOX">
-<wire x1="-8.75" y1="-3.75" x2="8.75" y2="-3.75" width="0.25" layer="21"/>
-<wire x1="8.75" y1="-3.75" x2="8.75" y2="3.75" width="0.25" layer="21"/>
-<wire x1="8.75" y1="3.75" x2="-8.75" y2="3.75" width="0.25" layer="21"/>
-<wire x1="-8.75" y1="3.75" x2="-8.75" y2="-3.75" width="0.25" layer="21"/>
+<wire x1="-8.75" y1="-3.75" x2="8.75" y2="-3.75" width="0.15" layer="21"/>
+<wire x1="8.75" y1="-3.75" x2="8.75" y2="3.75" width="0.15" layer="21"/>
+<wire x1="8.75" y1="3.75" x2="-8.75" y2="3.75" width="0.15" layer="21"/>
+<wire x1="-8.75" y1="3.75" x2="-8.75" y2="-3.75" width="0.15" layer="21"/>
 <pad name="1" x="-7.5" y="0" drill="1"/>
 <pad name="2" x="7.5" y="0" drill="1"/>
 <text x="-8.75" y="4" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="5X7.2BOX">
-<pad name="1" x="-2.5" y="0" drill="0.6"/>
-<pad name="2" x="2.5" y="0" drill="0.6"/>
-<wire x1="-3.75" y1="2.5" x2="3.75" y2="2.5" width="0.1524" layer="21"/>
-<wire x1="3.75" y1="2.5" x2="3.75" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="3.75" y1="-2.5" x2="-3.75" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="-3.75" y1="-2.5" x2="-3.75" y2="2.5" width="0.1524" layer="21"/>
-<text x="-3.75" y="2.75" size="1" layer="21">&gt;NAME</text>
+<package name="7.2X11BOX">
+<pad name="1" x="-2.5" y="0" drill="0.7" diameter="1.5"/>
+<pad name="2" x="2.5" y="0" drill="0.7" diameter="1.5"/>
+<wire x1="-3.6" y1="-5.5" x2="3.6" y2="-5.5" width="0.15" layer="21"/>
+<wire x1="3.6" y1="-5.5" x2="3.6" y2="5.5" width="0.15" layer="21"/>
+<wire x1="3.6" y1="5.5" x2="-3.6" y2="5.5" width="0.15" layer="21"/>
+<wire x1="-3.6" y1="5.5" x2="-3.6" y2="-5.5" width="0.15" layer="21"/>
+<text x="-3.5" y="5.75" size="1" layer="25">&gt;NAME</text>
 </package>
 <package name="8MM_RADIAL_3.5MM_PITCH">
 <circle x="0" y="0" radius="4" width="0.15" layer="21"/>
@@ -433,8 +443,9 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="2749806" constant="no"/>
-<attribute name="PRICE_PER" value="0.0716" constant="no"/>
+<attribute name="DIGIKEY" value="478-10047-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1" constant="no"/>
+<attribute name="PRICE_PER" value="0.14" constant="no"/>
 <attribute name="VALUE" value="100nF 100V" constant="no"/>
 </technology>
 </technologies>
@@ -463,8 +474,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="GRM188R71C563JA01D" prefix="C">
-<description>56nF 16V X7R 10% 0603 MLCC.</description>
+<deviceset name="CL10B473KO8NNNC" prefix="C">
+<description>47nF 16V X7R 10% 0603 MLCC.</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -476,10 +487,10 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="490-12540-1-ND" constant="no"/>
-<attribute name="HEIGHT" value="0.9" constant="no"/>
-<attribute name="PRICE_PER" value="0.14" constant="no"/>
-<attribute name="VALUE" value="56nF 16V" constant="no"/>
+<attribute name="DIGIKEY" value="1276-2079-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1" constant="no"/>
+<attribute name="PRICE_PER" value="0.08" constant="no"/>
+<attribute name="VALUE" value="47nF 16V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -498,7 +509,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="1865549" constant="no"/>
+<attribute name="DIGIKEY" value="399-3478-1-ND" constant="no"/>
 <attribute name="HEIGHT" value="1" constant="no"/>
 <attribute name="PRICE_PER" value="0.214" constant="no"/>
 <attribute name="VALUE" value="33nF 100V" constant="no"/>
@@ -520,7 +531,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="P16846-ND" constant="no"/>
+<attribute name="DIGIKEY" value="P16845-ND" constant="no"/>
 <attribute name="HEIGHT" value="13" constant="no"/>
 <attribute name="PRICE_PER" value="0.49" constant="no"/>
 <attribute name="VALUE" value="1uF 450V" constant="no"/>
@@ -551,45 +562,45 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="C1608X7R1H224K080AB" prefix="C">
-<description>220nF 50V X7R 10% 0603 MLCC.</description>
+<deviceset name="C3216X7R2A224K115AA" prefix="C">
+<description>220nF 100V X7R 10% 1206 MLCC</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="" package="1206">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="2346906" constant="no"/>
-<attribute name="HEIGHT" value="1" constant="no"/>
-<attribute name="PRICE_PER" value="0.0536" constant="no"/>
-<attribute name="VALUE" value="220nF 50V" constant="no"/>
+<attribute name="DIGIKEY" value="445-2283-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.8" constant="no"/>
+<attribute name="PRICE_PER" value="0.21" constant="no"/>
+<attribute name="VALUE" value="220nF 100V" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MKS2B042201F00KSSD" prefix="C">
-<description>2.2uF 50V FILM 10% 7.2 x 5mm BOX</description>
+<deviceset name="MKS2B051001N00JSSD" prefix="C">
+<description>10uF 50V FILM +/-5% 7.2 x 11mm BOX</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5X7.2BOX">
+<device name="" package="7.2X11BOX">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="107422" constant="no"/>
-<attribute name="HEIGHT" value="10" constant="no"/>
-<attribute name="PRICE_PER" value="1.28" constant="no"/>
-<attribute name="VALUE" value="2.2uF 50V" constant="no"/>
+<attribute name="DIGIKEY" value="1928-1631-ND" constant="no"/>
+<attribute name="HEIGHT" value="16" constant="no"/>
+<attribute name="PRICE_PER" value="2.22" constant="no"/>
+<attribute name="VALUE" value="10uF 50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -713,10 +724,10 @@
 <wire x1="-1.375" y1="-0.625" x2="-1.375" y2="0.625" width="0.125" layer="21"/>
 </package>
 <package name="SRP1265A">
-<wire x1="-7.25" y1="-6.75" x2="7.25" y2="-6.75" width="0.25" layer="21"/>
-<wire x1="7.25" y1="-6.75" x2="7.25" y2="6.75" width="0.25" layer="21"/>
-<wire x1="7.25" y1="6.75" x2="-7.25" y2="6.75" width="0.25" layer="21"/>
-<wire x1="-7.25" y1="6.75" x2="-7.25" y2="-6.75" width="0.25" layer="21"/>
+<wire x1="-7.25" y1="-6.75" x2="7.25" y2="-6.75" width="0.15" layer="21"/>
+<wire x1="7.25" y1="-6.75" x2="7.25" y2="6.75" width="0.15" layer="21"/>
+<wire x1="7.25" y1="6.75" x2="-7.25" y2="6.75" width="0.15" layer="21"/>
+<wire x1="-7.25" y1="6.75" x2="-7.25" y2="-6.75" width="0.15" layer="21"/>
 <smd name="1" x="-5.5" y="0" dx="3" dy="5" layer="1" rot="R180"/>
 <smd name="2" x="5.5" y="0" dx="3" dy="5" layer="1" rot="R180"/>
 <text x="-7.25" y="7" size="1" layer="21">&gt;NAME</text>
@@ -751,7 +762,9 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="1635706" constant="no"/>
+<attribute name="DIGIKEY" value="732-1593-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1" constant="no"/>
+<attribute name="PRICE_PER" value="0.13" constant="no"/>
 <attribute name="VALUE" value="600R" constant="no"/>
 </technology>
 </technologies>
@@ -771,7 +784,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="2434072" constant="no"/>
+<attribute name="DIGIKEY" value="SRP1265A-100MCT-ND" constant="no"/>
 <attribute name="HEIGHT" value="6.2" constant="no"/>
 <attribute name="PRICE_PER" value="1.32" constant="no"/>
 <attribute name="VALUE" value="10uH" constant="no"/>
@@ -821,9 +834,9 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="FARNELL" value="1653107" constant="no"/>
+<attribute name="DIGIKEY" value="311-2.0ERCT-ND" constant="no"/>
 <attribute name="HEIGHT" value="0.65" constant="no"/>
-<attribute name="PRICE_PER" value="0.0375" constant="no"/>
+<attribute name="PRICE_PER" value="0.09" constant="no"/>
 <attribute name="VALUE" value="2R0" constant="no"/>
 </technology>
 </technologies>
@@ -1159,20 +1172,20 @@
 <part name="GND53" library="NETS" deviceset="GND" device=""/>
 <part name="R32" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
 <part name="R33" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
-<part name="C64" library="CAPACITORS" deviceset="C1608X7R1H224K080AB" device="" value="220nF 50V"/>
+<part name="C64" library="CAPACITORS" deviceset="C3216X7R2A224K115AA" device="" value="220nF 100V"/>
 <part name="R34" library="r_0603" deviceset="ERJ3EKF2701V" device="" value="2.7k"/>
-<part name="C65" library="CAPACITORS" deviceset="MKS2B042201F00KSSD" device="" value="2.2uF 50V"/>
+<part name="C65" library="CAPACITORS" deviceset="MKS2B051001N00JSSD" device="" value="10uF 50V"/>
 <part name="R35" library="r_0603" deviceset="ERJ3EKF3302V" device="" value="33k"/>
 <part name="R36" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
 <part name="C66" library="CAPACITORS" deviceset="CC0603JRNPO9BN221" device="" value="220pF 50V"/>
 <part name="C67" library="CAPACITORS" deviceset="CC0603JRNPO9BN221" device="" value="220pF 50V"/>
 <part name="GND54" library="NETS" deviceset="GND" device=""/>
 <part name="R45" library="r_0603" deviceset="ERJ3EKF2701V" device="" value="2.7k"/>
-<part name="C76" library="CAPACITORS" deviceset="MKS2B042201F00KSSD" device="" value="2.2uF 50V"/>
+<part name="C76" library="CAPACITORS" deviceset="MKS2B051001N00JSSD" device="" value="10uF 50V"/>
 <part name="R46" library="r_0603" deviceset="ERJ3EKF2701V" device="" value="2.7k"/>
-<part name="C77" library="CAPACITORS" deviceset="MKS2B042201F00KSSD" device="" value="2.2uF 50V"/>
+<part name="C77" library="CAPACITORS" deviceset="MKS2B051001N00JSSD" device="" value="10uF 50V"/>
 <part name="R47" library="r_0603" deviceset="ERJ3EKF2701V" device="" value="2.7k"/>
-<part name="C78" library="CAPACITORS" deviceset="MKS2B042201F00KSSD" device="" value="2.2uF 50V"/>
+<part name="C78" library="CAPACITORS" deviceset="MKS2B051001N00JSSD" device="" value="10uF 50V"/>
 <part name="R48" library="r_0603" deviceset="ERJ3EKF3302V" device="" value="33k"/>
 <part name="R49" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
 <part name="C79" library="CAPACITORS" deviceset="CC0603JRNPO9BN221" device="" value="220pF 50V"/>
@@ -1195,7 +1208,7 @@
 <part name="GND68" library="NETS" deviceset="GND" device=""/>
 <part name="R54" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
 <part name="R55" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
-<part name="C87" library="CAPACITORS" deviceset="C1608X7R1H224K080AB" device="" value="220nF 50V"/>
+<part name="C87" library="CAPACITORS" deviceset="C3216X7R2A224K115AA" device="" value="220nF 100V"/>
 <part name="C88" library="CAPACITORS" deviceset="ECWFE2W105K" device="" value="1uF 450V"/>
 <part name="GND69" library="NETS" deviceset="GND" device=""/>
 <part name="GND70" library="NETS" deviceset="GND" device=""/>
@@ -1203,7 +1216,7 @@
 <part name="GND71" library="NETS" deviceset="GND" device=""/>
 <part name="R56" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
 <part name="R57" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
-<part name="C90" library="CAPACITORS" deviceset="C1608X7R1H224K080AB" device="" value="220nF 50V"/>
+<part name="C90" library="CAPACITORS" deviceset="C3216X7R2A224K115AA" device="" value="220nF 100V"/>
 <part name="C91" library="CAPACITORS" deviceset="ECWFE2W105K" device="" value="1uF 450V"/>
 <part name="GND72" library="NETS" deviceset="GND" device=""/>
 <part name="GND73" library="NETS" deviceset="GND" device=""/>
@@ -1211,7 +1224,7 @@
 <part name="GND74" library="NETS" deviceset="GND" device=""/>
 <part name="R58" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
 <part name="R59" library="RESISTORS" deviceset="CRCW12062R00FNEA" device="" value="2R0"/>
-<part name="C93" library="CAPACITORS" deviceset="C1608X7R1H224K080AB" device="" value="220nF 50V"/>
+<part name="C93" library="CAPACITORS" deviceset="C3216X7R2A224K115AA" device="" value="220nF 100V"/>
 <part name="GND75" library="NETS" deviceset="GND" device=""/>
 <part name="R60" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
 <part name="C94" library="CAPACITORS" deviceset="CL10A105KA8NNNC" device="" value="1uF 25V"/>
@@ -1220,7 +1233,7 @@
 <part name="GND77" library="NETS" deviceset="GND" device=""/>
 <part name="R62" library="r_0603" deviceset="ERJ3EKF3002V" device="" value="30k"/>
 <part name="GND78" library="NETS" deviceset="GND" device=""/>
-<part name="C95" library="CAPACITORS" deviceset="GRM188R71C563JA01D" device="" value="56nF 16V"/>
+<part name="C95" library="CAPACITORS" deviceset="CL10B473KO8NNNC" device="" value="47nF 16V"/>
 <part name="GND79" library="NETS" deviceset="GND" device=""/>
 <part name="GND80" library="NETS" deviceset="GND" device=""/>
 <part name="U$28" library="NETS" deviceset="12V" device=""/>
@@ -2421,7 +2434,7 @@
 <wire x1="218.44" y1="152.4" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TPA_VDD_1" class="0">
+<net name="TPA_VDD" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="DVDD"/>
 <pinref part="C49" gate="G$1" pin="1"/>
@@ -2430,10 +2443,12 @@
 <wire x1="261.62" y1="271.78" x2="261.62" y2="276.86" width="0.1524" layer="91"/>
 <junction x="261.62" y="271.78"/>
 <wire x1="261.62" y1="276.86" x2="236.22" y2="276.86" width="0.1524" layer="91"/>
+<label x="238.76" y="276.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R60" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="177.8" x2="215.9" y2="177.8" width="0.1524" layer="91"/>
+<label x="218.44" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
