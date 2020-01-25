@@ -8503,21 +8503,6 @@ recommended</text>
 <wire x1="27.94" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
 <label x="5.08" y="81.28" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U22" gate="G$1" pin="A1"/>
-<wire x1="231.14" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
-<label x="208.28" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U26" gate="G$1" pin="A1"/>
-<wire x1="434.34" y1="81.28" x2="408.94" y2="81.28" width="0.1524" layer="91"/>
-<label x="411.48" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U30" gate="G$1" pin="A1"/>
-<wire x1="637.54" y1="81.28" x2="612.14" y2="81.28" width="0.1524" layer="91"/>
-<label x="614.68" y="81.28" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="DISP_SPI_!CE" class="0">
 <segment>
@@ -8631,36 +8616,6 @@ recommended</text>
 </segment>
 </net>
 <net name="SHIFT_OUT" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="QH"/>
-<wire x1="63.5" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="63.5" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R46" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
-<junction x="139.7" y="63.5"/>
-<label x="149.86" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U22" gate="G$1" pin="QH"/>
-<wire x1="266.7" y1="63.5" x2="342.9" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="63.5" x2="342.9" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R79" gate="G$1" pin="2"/>
-<wire x1="342.9" y1="40.64" x2="337.82" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="63.5" x2="381" y2="63.5" width="0.1524" layer="91"/>
-<junction x="342.9" y="63.5"/>
-<label x="353.06" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U26" gate="G$1" pin="QH"/>
-<wire x1="469.9" y1="63.5" x2="546.1" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="546.1" y1="63.5" x2="546.1" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R96" gate="G$1" pin="2"/>
-<wire x1="546.1" y1="40.64" x2="541.02" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="546.1" y1="63.5" x2="584.2" y2="63.5" width="0.1524" layer="91"/>
-<junction x="546.1" y="63.5"/>
-<label x="556.26" y="63.5" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U30" gate="G$1" pin="QH"/>
 <wire x1="673.1" y1="63.5" x2="749.3" y2="63.5" width="0.1524" layer="91"/>
@@ -9113,6 +9068,54 @@ recommended</text>
 <wire x1="368.3" y1="190.5" x2="337.82" y2="190.5" width="0.1524" layer="91"/>
 <junction x="368.3" y="190.5"/>
 <label x="340.36" y="190.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DISP_SPI_MOSI1" class="0">
+<segment>
+<pinref part="U22" gate="G$1" pin="A1"/>
+<wire x1="231.14" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="208.28" y="81.28" size="1.778" layer="95"/>
+<pinref part="U8" gate="G$1" pin="QH"/>
+<wire x1="63.5" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="63.5" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<junction x="139.7" y="63.5"/>
+<label x="149.86" y="63.5" size="1.778" layer="95"/>
+<wire x1="195.58" y1="81.28" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DISP_SPI_MOSI2" class="0">
+<segment>
+<pinref part="U26" gate="G$1" pin="A1"/>
+<wire x1="434.34" y1="81.28" x2="398.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="411.48" y="81.28" size="1.778" layer="95"/>
+<pinref part="U22" gate="G$1" pin="QH"/>
+<wire x1="266.7" y1="63.5" x2="342.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="63.5" x2="342.9" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R79" gate="G$1" pin="2"/>
+<wire x1="342.9" y1="40.64" x2="337.82" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="63.5" x2="381" y2="63.5" width="0.1524" layer="91"/>
+<junction x="342.9" y="63.5"/>
+<label x="353.06" y="63.5" size="1.778" layer="95"/>
+<wire x1="398.78" y1="81.28" x2="381" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DISP_SPI_MOSI3" class="0">
+<segment>
+<pinref part="U30" gate="G$1" pin="A1"/>
+<wire x1="637.54" y1="81.28" x2="601.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="614.68" y="81.28" size="1.778" layer="95"/>
+<pinref part="U26" gate="G$1" pin="QH"/>
+<wire x1="469.9" y1="63.5" x2="546.1" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="63.5" x2="546.1" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R96" gate="G$1" pin="2"/>
+<wire x1="546.1" y1="40.64" x2="541.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="63.5" x2="584.2" y2="63.5" width="0.1524" layer="91"/>
+<junction x="546.1" y="63.5"/>
+<label x="556.26" y="63.5" size="1.778" layer="95"/>
+<wire x1="601.98" y1="81.28" x2="584.2" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
