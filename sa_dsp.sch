@@ -7931,6 +7931,11 @@ recommended</text>
 <junction x="480.06" y="360.68"/>
 <label x="452.12" y="360.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="B2_IO22"/>
+<wire x1="312.42" y1="340.36" x2="350.52" y2="340.36" width="0.1524" layer="91"/>
+<label x="314.96" y="340.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$237" class="0">
 <segment>
@@ -7955,6 +7960,11 @@ recommended</text>
 <wire x1="480.06" y1="302.26" x2="480.06" y2="304.8" width="0.1524" layer="91"/>
 <junction x="480.06" y="304.8"/>
 <label x="452.12" y="304.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="B2_IO20"/>
+<wire x1="312.42" y1="345.44" x2="350.52" y2="345.44" width="0.1524" layer="91"/>
+<label x="314.96" y="345.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
