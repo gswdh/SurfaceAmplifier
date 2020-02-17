@@ -6219,13 +6219,11 @@ recommended</text>
 <part name="R84" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
 <part name="R85" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
 <part name="R86" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
-<part name="R87" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
 <part name="U$163" library="NETS" deviceset="3V3" device=""/>
 <part name="U$164" library="NETS" deviceset="3V3" device=""/>
 <part name="U$165" library="NETS" deviceset="3V3" device=""/>
 <part name="U$166" library="NETS" deviceset="3V3" device=""/>
 <part name="U$167" library="NETS" deviceset="3V3" device=""/>
-<part name="U$168" library="NETS" deviceset="3V3" device=""/>
 <part name="GND78" library="NETS" deviceset="GND" device=""/>
 <part name="GND79" library="NETS" deviceset="GND" device=""/>
 <part name="C96" library="CAPACITORS" deviceset="CL05B104KO5NNNC" device="" value="100nF 16V"/>
@@ -6693,10 +6691,6 @@ recommended</text>
 <attribute name="NAME" x="60.96" y="490.22" size="1.27" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="66.04" y="490.22" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R87" gate="G$1" x="71.12" y="490.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="68.58" y="490.22" size="1.27" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="73.66" y="490.22" size="1.27" layer="96" rot="R90" align="center"/>
-</instance>
 <instance part="U$163" gate="G$1" x="33.02" y="472.44" smashed="yes">
 <attribute name="VALUE" x="33.02" y="474.98" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
@@ -6711,9 +6705,6 @@ recommended</text>
 </instance>
 <instance part="U$167" gate="G$1" x="63.5" y="500.38" smashed="yes">
 <attribute name="VALUE" x="63.5" y="502.92" size="1.778" layer="96" rot="R180" align="center"/>
-</instance>
-<instance part="U$168" gate="G$1" x="71.12" y="500.38" smashed="yes">
-<attribute name="VALUE" x="71.12" y="502.92" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
 <instance part="GND78" gate="G$1" x="43.18" y="426.72" smashed="yes">
 <attribute name="VALUE" x="43.18" y="424.18" size="1.778" layer="96" align="center"/>
@@ -7368,14 +7359,6 @@ recommended</text>
 <wire x1="261.62" y1="622.3" x2="261.62" y2="619.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CONF_NCONFIG" class="0">
-<segment>
-<pinref part="R87" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="485.14" x2="71.12" y2="482.6" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="482.6" x2="101.6" y2="482.6" width="0.1524" layer="91"/>
-<label x="73.66" y="482.6" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="CONF_NSTATUS" class="0">
 <segment>
 <pinref part="R85" gate="G$1" pin="1"/>
@@ -7488,11 +7471,6 @@ recommended</text>
 <pinref part="R86" gate="G$1" pin="2"/>
 <pinref part="U$167" gate="G$1" pin="3V3"/>
 <wire x1="63.5" y1="497.84" x2="63.5" y2="495.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R87" gate="G$1" pin="2"/>
-<pinref part="U$168" gate="G$1" pin="3V3"/>
-<wire x1="71.12" y1="497.84" x2="71.12" y2="495.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="B1_NCONFIG"/>
@@ -8086,6 +8064,13 @@ recommended</text>
 <pinref part="U6" gate="G$1" pin="B8_IO13"/>
 <wire x1="226.06" y1="492.76" x2="187.96" y2="492.76" width="0.1524" layer="91"/>
 <label x="190.5" y="492.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AM_PWR_BTN" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="B2_IO14"/>
+<wire x1="312.42" y1="360.68" x2="350.52" y2="360.68" width="0.1524" layer="91"/>
+<label x="314.96" y="360.68" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
