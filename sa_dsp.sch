@@ -8092,6 +8092,12 @@ recommended</text>
 <label x="314.96" y="360.68" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="UI_INPUT_SEL" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="B8_IO34"/>
+<wire x1="226.06" y1="439.42" x2="187.96" y2="439.42" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
