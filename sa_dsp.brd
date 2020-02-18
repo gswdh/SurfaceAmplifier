@@ -3,10 +3,10 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND" color="11" fill="1" visible="no" active="yes"/>
@@ -169,7 +169,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjllNWFm" projecturn="a.cGVyc29uYWw6dWUyYjllNWFmIzIwMTkxMjI4MjUwNDIyMjU2" f3durn="urn:adsk.wipprod:dm.lineage:CqW4ZhZ1TFmxgOJkHdVJ3g" pcbguid="4b5c0a41-b23c-4fc7-838e-9bdaa75cf9c5" lastpulledtime="" lastsyncedchangeguid="d96c123a-8f44-4035-67a5-0809ee7f3b3b"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjllNWFm" projecturn="a.cGVyc29uYWw6dWUyYjllNWFmIzIwMTkxMjI4MjUwNDIyMjU2" f3durn="urn:adsk.wipprod:dm.lineage:CqW4ZhZ1TFmxgOJkHdVJ3g" pcbguid="4b5c0a41-b23c-4fc7-838e-9bdaa75cf9c5" lastpulledtime="" lastsyncedchangeguid="b99e2f85-d5a1-5af1-3e0d-b2e4f9f97fe5"/>
 <plain>
 <wire x1="0" y1="107" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
@@ -11048,10 +11048,10 @@ einem neuen Namen ab.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFACACAC"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
