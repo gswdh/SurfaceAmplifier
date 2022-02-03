@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0625" altunitdist="mm" altunit="mm"/>
@@ -169,7 +169,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjllNWFm" projecturn="a.cGVyc29uYWw6dWUyYjllNWFmIzIwMTkxMjI4MjUwNDIyMjU2" f3durn="urn:adsk.wipprod:dm.lineage:m4ZLmtDPSBi7t8s1LXGY7Q" pcbguid="a9010d63-82fc-4850-965d-be8cf9206a94" lastpulledtime="" lastsyncedchangeguid="f5b82504-2f50-8890-a936-34cf81d0887f" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="" lastpushedtime="" linktopcb3d="false"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bXl1Y2wxNDk2" projecturn="a.YnVzaW5lc3M6bXl1Y2wxNDk2IzIwMjIwMjAyNDkyNTM5Mjc2" f3durn="urn:adsk.wipprod:dm.lineage:MC4icXcqTnGoFOp60mNzOw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="f5b82504-2f50-8890-a936-34cf81d0887f" latestrevisionid="8ead1e05-3205-47fa-8a02-4f21de01c507" lastsyncedrevisionid="8ead1e05-3205-47fa-8a02-4f21de01c507" lastboardhashguid="6a9ea676-596f-2f4f-2220-b6cc05552d6a" lastpushedtime="2022-02-02T15:27:04Z" linktopcb3d="true"/>
 <plain>
 <wire x1="-47.5" y1="-22" x2="-44.5" y2="-25" width="0" layer="20" curve="90"/>
 <wire x1="-44.5" y1="-25" x2="6.75" y2="-25" width="0" layer="20"/>
@@ -2608,11 +2608,11 @@ einem neuen Namen ab.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8303030"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF282828"/>
 </mfgpreviewcolors>
 </board>
 </drawing>
