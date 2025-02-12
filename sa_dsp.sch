@@ -1292,19 +1292,19 @@ by exp-lbrs.ulp</description>
 <wire x1="-22" y1="8.4" x2="-22" y2="-8.4" width="0.15" layer="21"/>
 <text x="-22" y="8.625" size="1" layer="25">&gt;NAME</text>
 </package>
-<package name="PCB_TAB">
-<smd name="1" x="0" y="0" dx="5" dy="5" layer="1" rot="R90"/>
-<wire x1="-4.75" y1="4" x2="-4.75" y2="-4" width="0" layer="20"/>
-<wire x1="-3.75" y1="-5" x2="-2.75" y2="-4" width="0" layer="20" curve="90"/>
-<wire x1="-2.75" y1="-4" x2="-2.75" y2="4" width="0" layer="20"/>
-<wire x1="-2.75" y1="4" x2="-1.75" y2="5" width="0" layer="20" curve="-90"/>
-<wire x1="-1.75" y1="5" x2="1.75" y2="5" width="0" layer="20"/>
-<wire x1="1.75" y1="5" x2="2.75" y2="4" width="0" layer="20" curve="-90"/>
-<wire x1="2.75" y1="4" x2="2.75" y2="-4" width="0" layer="20"/>
-<wire x1="2.75" y1="-4" x2="3.75" y2="-5" width="0" layer="20" curve="90"/>
-<wire x1="4.75" y1="-4" x2="4.75" y2="4" width="0" layer="20"/>
-<wire x1="-4.75" y1="-4" x2="-3.75" y2="-5" width="0" layer="20" curve="90"/>
-<wire x1="3.75" y1="-5" x2="4.75" y2="-4" width="0" layer="20" curve="90"/>
+<package name="PCB_TAB_SMALL">
+<smd name="1" x="0" y="0" dx="5" dy="2.5" layer="1" rot="R90"/>
+<wire x1="-3.5" y1="4" x2="-3.5" y2="-4" width="0" layer="20"/>
+<wire x1="-3.5" y1="-4" x2="-2.5" y2="-5" width="0" layer="20" curve="90"/>
+<wire x1="-2.5" y1="-5" x2="-1.5" y2="-4" width="0" layer="20" curve="90"/>
+<wire x1="-1.5" y1="-4" x2="-1.5" y2="4" width="0" layer="20"/>
+<wire x1="-1.5" y1="4" x2="-0.5" y2="5" width="0" layer="20" curve="-90"/>
+<wire x1="-0.5" y1="5" x2="0.5" y2="5" width="0" layer="20"/>
+<wire x1="0.5" y1="5" x2="1.5" y2="4" width="0" layer="20" curve="-90"/>
+<wire x1="1.5" y1="4" x2="1.5" y2="-4" width="0" layer="20"/>
+<wire x1="1.5" y1="-4" x2="2.5" y2="-5" width="0" layer="20" curve="90"/>
+<wire x1="2.5" y1="-5" x2="3.5" y2="-4" width="0" layer="20" curve="90"/>
+<wire x1="3.5" y1="-4" x2="3.5" y2="4" width="0" layer="20"/>
 </package>
 </packages>
 <symbols>
@@ -1494,13 +1494,13 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCB_TAB" prefix="CN">
+<deviceset name="PCB_TAB_SMALL" prefix="CN">
 <description>PCB tab for soldering. Built into the PCB.</description>
 <gates>
 <gate name="G$1" symbol="6.35TABTERMINAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PCB_TAB">
+<device name="" package="PCB_TAB_SMALL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -1759,22 +1759,74 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRCW060310R0FKTA" prefix="R">
+<description>10 ±1% 10 Ohms Thick Film 0.1W, 1/10W 0603</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="541-2983-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1" constant="no"/>
+<attribute name="MANUFACTURER" value="Vishay Dale" constant="no"/>
+<attribute name="POWER" value="0.1W, 1/10W" constant="no"/>
+<attribute name="PRICE_PER" value="0.12000" constant="no"/>
+<attribute name="STOCK" value="19024" constant="no"/>
+<attribute name="TOLERANCE" value="±1%" constant="no"/>
+<attribute name="VALUE" value="10R" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRCW060310K0FKTA" prefix="R">
+<description>10000 ±1% 10k Thick Film 0.1W, 1/10W 0603</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="541-2980-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1" constant="no"/>
+<attribute name="MANUFACTURER" value="Vishay Dale" constant="no"/>
+<attribute name="POWER" value="0.1W, 1/10W" constant="no"/>
+<attribute name="PRICE_PER" value="0.12000" constant="no"/>
+<attribute name="STOCK" value="50797" constant="no"/>
+<attribute name="TOLERANCE" value="±1%" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
-<library name="c_0603">
+<library name="CAPACITORS">
 <packages>
-<package name="0603">
-<smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="-1.5" y="0.75" size="1.016" layer="25">&gt;NAME</text>
-<wire x1="-1.375" y1="0.625" x2="1.375" y2="0.625" width="0.125" layer="21"/>
-<wire x1="1.375" y1="0.625" x2="1.375" y2="-0.625" width="0.125" layer="21"/>
-<wire x1="1.375" y1="-0.625" x2="-1.375" y2="-0.625" width="0.125" layer="21"/>
-<wire x1="-1.375" y1="-0.625" x2="-1.375" y2="0.625" width="0.125" layer="21"/>
+<package name="1812">
+<wire x1="-3" y1="-2" x2="3" y2="-2" width="0.125" layer="21"/>
+<wire x1="3" y1="-2" x2="3" y2="2" width="0.125" layer="21"/>
+<wire x1="3" y1="2" x2="-3" y2="2" width="0.125" layer="21"/>
+<wire x1="-3" y1="2" x2="-3" y2="-2" width="0.125" layer="21"/>
+<smd name="1" x="-2.25" y="0" dx="1.2" dy="3.5" layer="1"/>
+<smd name="2" x="2.25" y="0" dx="1.2" dy="3.5" layer="1"/>
+<text x="-3" y="2.25" size="1" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
-<symbol name="CAPACITOR_NON_POLAR">
+<symbol name="CAPACITOR">
 <pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short"/>
 <wire x1="-0.635" y1="1.27" x2="-0.635" y2="0" width="0.254" layer="94"/>
@@ -1788,28 +1840,23 @@ by exp-lbrs.ulp</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CL10B104KB8NNWC" prefix="C">
-<description>100000 50V 0.1µF ±10% X7R 0603</description>
+<deviceset name="C1812C102KGRACAUTO" prefix="C">
+<description>1nF 2000V X7R 10% 1812 MLCC.</description>
 <gates>
-<gate name="G$1" symbol="CAPACITOR_NON_POLAR" x="0" y="0"/>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="" package="1812">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="1276-1935-1-ND" constant="no"/>
-<attribute name="HEIGHT" value="-" constant="no"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" constant="no"/>
-<attribute name="PRICE_PER" value="0.07000" constant="no"/>
-<attribute name="STOCK" value="4241" constant="no"/>
-<attribute name="TEMP_CO" value="X7R" constant="no"/>
-<attribute name="TOLERANCE" value="±10%" constant="no"/>
-<attribute name="VALUE" value="0.1uF 50V" constant="no"/>
-<attribute name="VOLTAGE" value="50V" constant="no"/>
+<attribute name="DIGIKEY" value="399-16774-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.6" constant="no"/>
+<attribute name="PRICE_PER" value="0.32" constant="no"/>
+<attribute name="VALUE" value="1nF 2kV" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1836,7 +1883,6 @@ by exp-lbrs.ulp</description>
 <part name="MECH2" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
 <part name="MECH3" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
 <part name="MECH4" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
-<part name="MECH5" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
 <part name="MECH6" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
 <part name="MECH7" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
 <part name="MECH8" library="MISC" deviceset="MOUNTHOLE" device="" value="6mm x 3mm"/>
@@ -1844,9 +1890,9 @@ by exp-lbrs.ulp</description>
 <part name="CN1" library="CONNECTORs" deviceset="2-1761465-1" device="" value="2-1761465-1"/>
 <part name="CN2" library="CONNECTORs" deviceset="629104190121" device="" value="USB A"/>
 <part name="CN3" library="CONNECTORs" deviceset="0857931020" device="" value="Gb RJ45 + MAG"/>
-<part name="CN4" library="CONNECTORs" deviceset="PCB_TAB" device="" value="PCB Tab"/>
-<part name="CN5" library="CONNECTORs" deviceset="PCB_TAB" device="" value="PCB Tab"/>
-<part name="CN6" library="CONNECTORs" deviceset="PCB_TAB" device="" value="PCB Tab"/>
+<part name="CN4" library="CONNECTORs" deviceset="PCB_TAB_SMALL" device="" value="PCB Tab"/>
+<part name="CN5" library="CONNECTORs" deviceset="PCB_TAB_SMALL" device="" value="PCB Tab"/>
+<part name="CN6" library="CONNECTORs" deviceset="PCB_TAB_SMALL" device="" value="PCB Tab"/>
 <part name="U1" library="ICs" deviceset="PDQE15-Q24-S3-D" device="" value="DCDC 3V3"/>
 <part name="GND5" library="NETS" deviceset="GND" device=""/>
 <part name="D1" library="OPTO" deviceset="150060RS75000" device="" value="RED LED"/>
@@ -1868,8 +1914,11 @@ by exp-lbrs.ulp</description>
 <part name="GND11" library="NETS" deviceset="GND" device=""/>
 <part name="GND12" library="NETS" deviceset="GND" device=""/>
 <part name="GND13" library="NETS" deviceset="GND" device=""/>
-<part name="C1" library="c_0603" deviceset="CL10B104KB8NNWC" device="" value="0.1uF 50V"/>
+<part name="C1" library="CAPACITORS" deviceset="C1812C102KGRACAUTO" device="" value="1nF 2kV"/>
 <part name="GND14" library="NETS" deviceset="GND" device=""/>
+<part name="R6" library="r_0603" deviceset="CRCW060310K0FKTA" device="" value="10k"/>
+<part name="R7" library="r_0603" deviceset="CRCW060310R0FKTA" device="" value="10R"/>
+<part name="R8" library="r_0603" deviceset="CRCW060310R0FKTA" device="" value="10R"/>
 </parts>
 <sheets>
 <sheet>
@@ -1910,9 +1959,6 @@ WM10313-ND</text>
 </instance>
 <instance part="MECH4" gate="G$1" x="88.9" y="226.06" smashed="yes">
 <attribute name="NAME" x="88.9" y="229.616" size="1.27" layer="95" align="center"/>
-</instance>
-<instance part="MECH5" gate="G$1" x="96.52" y="226.06" smashed="yes">
-<attribute name="NAME" x="96.52" y="229.616" size="1.27" layer="95" align="center"/>
 </instance>
 <instance part="MECH6" gate="G$1" x="104.14" y="226.06" smashed="yes">
 <attribute name="NAME" x="104.14" y="229.616" size="1.27" layer="95" align="center"/>
@@ -2031,6 +2077,18 @@ WM10313-ND</text>
 </instance>
 <instance part="GND14" gate="G$1" x="406.4" y="86.36" smashed="yes">
 <attribute name="VALUE" x="406.4" y="83.82" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R6" gate="G$1" x="-7.62" y="33.02" smashed="yes">
+<attribute name="NAME" x="-7.62" y="35.56" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="-7.62" y="30.48" size="1.27" layer="96" align="center"/>
+</instance>
+<instance part="R7" gate="G$1" x="-2.54" y="38.1" smashed="yes">
+<attribute name="NAME" x="-2.54" y="40.64" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="-2.54" y="35.56" size="1.27" layer="96" align="center"/>
+</instance>
+<instance part="R8" gate="G$1" x="-7.62" y="43.18" smashed="yes">
+<attribute name="NAME" x="-7.62" y="45.72" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="-7.62" y="40.64" size="1.27" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -2321,6 +2379,16 @@ WM10313-ND</text>
 <pinref part="GND14" gate="G$1" pin="GND"/>
 <wire x1="406.4" y1="88.9" x2="406.4" y2="91.44" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="43.18" x2="-43.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="-40.64" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="38.1" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
+<label x="-40.64" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -2481,13 +2549,6 @@ WM10313-ND</text>
 <label x="370.84" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CM4_RUN_PG" class="0">
-<segment>
-<pinref part="RPI-CM1" gate="G$1" pin="RUN_PG"/>
-<wire x1="129.54" y1="38.1" x2="170.18" y2="38.1" width="0.1524" layer="91"/>
-<label x="137.16" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="CM4_PWR_1V8" class="0">
 <segment>
 <pinref part="RPI-CM1" gate="G$1" pin="CM4_1.8V(OUTPUT)@90"/>
@@ -2515,6 +2576,11 @@ WM10313-ND</text>
 <pinref part="RPI-CM1" gate="G$1" pin="GPIO_VREF"/>
 <wire x1="129.54" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
 <label x="137.16" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<label x="-40.64" y="33.02" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="33.02" x2="-43.18" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CM4_ETH_TRD0_P" class="0">
@@ -2806,6 +2872,31 @@ WM10313-ND</text>
 <wire x1="408.94" y1="106.68" x2="406.4" y2="106.68" width="0.1524" layer="91"/>
 <junction x="406.4" y="106.68"/>
 <pinref part="C1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="RPI-CM1" gate="G$1" pin="!RPIBOOT"/>
+<wire x1="68.58" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="33.02" x2="-2.54" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="RPI-CM1" gate="G$1" pin="BT_!DISABLE"/>
+<wire x1="2.54" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="RPI-CM1" gate="G$1" pin="WL_!DISABLE"/>
+<wire x1="68.58" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="40.64" x2="2.54" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
